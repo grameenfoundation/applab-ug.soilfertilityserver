@@ -1,0 +1,180 @@
+01/14/2014 4:46:39 PM => 30 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:46:39 PM => 30 4files found
+01/14/2014 4:46:39 PM => 30 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook1.xlsm
+01/14/2014 4:46:39 PM => 29 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:46:39 PM => 29 4files found
+01/14/2014 4:46:39 PM => 32 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:46:39 PM => 32 4files found
+01/14/2014 4:46:40 PM => 24 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:46:40 PM => 24 4files found
+01/14/2014 4:46:40 PM => 9 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:46:40 PM => 9 4files found
+01/14/2014 4:46:40 PM => 6 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:46:40 PM => 6 4files found
+01/14/2014 4:46:41 PM => 29 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook2.xlsm
+01/14/2014 4:46:42 PM => 9 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook3.xlsm
+01/14/2014 4:46:50 PM => 24 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook4.xlsm
+01/14/2014 4:46:52 PM => 24 B4 running Optimize_Solver
+01/14/2014 4:46:52 PM => 9 B4 running Optimize_Solver
+01/14/2014 4:46:52 PM => 30 B4 running Optimize_Solver
+01/14/2014 4:46:52 PM => 29 B4 running Optimize_Solver
+01/14/2014 4:46:54 PM => 24 AFTER running Optimize_Solver
+01/14/2014 4:46:54 PM => 9 AFTER running Optimize_Solver
+01/14/2014 4:46:54 PM => 30 AFTER running Optimize_Solver
+01/14/2014 4:46:54 PM => 29 AFTER running Optimize_Solver
+01/14/2014 4:46:54 PM => 9 B4 Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 24 B4 Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 30 B4 Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 29 B4 Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 9 AFTER Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 9 B4 Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 24 AFTER Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 24 B4 Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 29 AFTER Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 9 AFTER Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 30 AFTER Copying Crop-Fertilizer-Amounts
+01/14/2014 4:46:54 PM => 24 AFTER Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 29 B4 Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 9 B4 Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 24 B4 Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 30 B4 Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 29 AFTER Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 9 AFTER Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 24 AFTER Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 29 B4 Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 30 AFTER Copying Total Fertilizer Required
+01/14/2014 4:46:54 PM => 30 B4 Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 24 Closing
+01/14/2014 4:46:54 PM => 9 Closing
+01/14/2014 4:46:54 PM => 29 AFTER Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 30 AFTER Copying Crop Yeild Increase and Net Returns
+01/14/2014 4:46:54 PM => 29 Closing
+01/14/2014 4:46:54 PM => 30 Closing
+01/14/2014 4:46:56 PM => 30 Releasing obj Microsoft.Office.Interop.Excel.ApplicationClass
+01/14/2014 4:46:56 PM => 29 Releasing obj Microsoft.Office.Interop.Excel.ApplicationClass
+01/14/2014 4:46:56 PM => 9 Releasing obj Microsoft.Office.Interop.Excel.ApplicationClass
+01/14/2014 4:46:56 PM => 29 Releasing obj System.__ComObject
+01/14/2014 4:46:56 PM => 30 Releasing obj System.__ComObject
+01/14/2014 4:46:56 PM => 24 Releasing obj Microsoft.Office.Interop.Excel.ApplicationClass
+01/14/2014 4:46:56 PM => 9 Releasing obj System.__ComObject
+01/14/2014 4:46:57 PM => 24 Releasing obj System.__ComObject
+01/14/2014 4:47:24 PM => 9 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:47:24 PM => 9 4files found
+01/14/2014 4:47:24 PM => 29 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:47:24 PM => 29 4files found
+01/14/2014 4:47:25 PM => 24 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:47:25 PM => 24 4files found
+01/14/2014 4:47:26 PM => 33 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 4:47:26 PM => 33 4files found
+01/14/2014 5:39:54 PM => 23 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 5:39:54 PM => 23 4files found
+01/14/2014 6:07:38 PM => 16 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:07:38 PM => 16 4files found
+01/14/2014 6:07:38 PM => 16 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook1.xlsm
+01/14/2014 6:07:39 PM => 16 Some wired exception occured, see below
+01/14/2014 6:07:39 PM => 16    at Microsoft.Office.Interop.Excel.Workbooks.Open(String Filename, Object UpdateLinks, Object ReadOnly, Object Format, Object Password, Object WriteResPassword, Object IgnoreReadOnlyRecommended, Object Origin, Object Delimiter, Object Editable, Object Notify, Object Converter, Object AddToMru, Object Local, Object CorruptLoad)
+   at Optimizer.Calculator.openExel(String json) in d:\gf-projects\dotnet\MyTestService\MyTestService\Service1.asmx.cs:line 167
+01/14/2014 6:07:51 PM => 16 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:07:51 PM => 16 4files found
+01/14/2014 6:07:51 PM => 16 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook2.xlsm
+01/14/2014 6:07:54 PM => 16 B4 running Optimize_Solver
+01/14/2014 6:07:54 PM => 16 AFTER running Optimize_Solver
+01/14/2014 6:07:54 PM => 16 B4 Copying Crop-Fertilizer-Amounts
+01/14/2014 6:07:54 PM => 16 AFTER Copying Crop-Fertilizer-Amounts
+01/14/2014 6:07:54 PM => 16 B4 Copying Total Fertilizer Required
+01/14/2014 6:07:54 PM => 16 AFTER Copying Total Fertilizer Required
+01/14/2014 6:07:54 PM => 16 B4 Copying Crop Yeild Increase and Net Returns
+01/14/2014 6:07:54 PM => 16 AFTER Copying Crop Yeild Increase and Net Returns
+01/14/2014 6:07:54 PM => 16 Closing
+01/14/2014 6:07:55 PM => 16 Releasing obj Microsoft.Office.Interop.Excel.ApplicationClass
+01/14/2014 6:07:55 PM => 16 Releasing obj System.__ComObject
+01/14/2014 6:08:10 PM => 11 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:08:10 PM => 11 4files found
+01/14/2014 6:08:10 PM => 17 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:08:10 PM => 17 4files found
+01/14/2014 6:08:11 PM => 27 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:08:11 PM => 27 4files found
+01/14/2014 6:08:11 PM => 16 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:08:11 PM => 16 4files found
+01/14/2014 6:15:48 PM => 10 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:15:48 PM => 10 4files found
+01/14/2014 6:15:49 PM => 19 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:15:49 PM => 19 4files found
+01/14/2014 6:16:15 PM => 22 
+
+Starting process with {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/14/2014 6:16:15 PM => 22 4files found
+01/15/2014 2:52:28 PM => 6 Starting process with  {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/15/2014 2:52:28 PM => 6 4files found
+01/15/2014 2:52:29 PM => 6 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook1.xlsm
+01/15/2014 2:52:48 PM => 6 B4 running Optimize_Solver
+01/15/2014 2:52:51 PM => 6 AFTER running Optimize_Solver
+01/15/2014 2:52:52 PM => 6 B4 Copying Crop-Fertilizer-Amounts
+01/15/2014 2:52:52 PM => 6 AFTER Copying Crop-Fertilizer-Amounts
+01/15/2014 2:52:52 PM => 6 B4 Copying Total Fertilizer Required
+01/15/2014 2:52:52 PM => 6 AFTER Copying Total Fertilizer Required
+01/15/2014 2:52:52 PM => 6 B4 Copying Crop Yeild Increase and Net Returns
+01/15/2014 2:52:52 PM => 6 AFTER Copying Crop Yeild Increase and Net Returns
+01/15/2014 2:52:52 PM => 6 Closing
+01/15/2014 2:52:53 PM => 6 Releasing obj System.__ComObject
+01/15/2014 2:52:53 PM => 6 Releasing obj System.__ComObject
+01/15/2014 2:52:53 PM => 6 Releasing obj Microsoft.Office.Interop.Excel.ApplicationClass
+01/15/2014 2:53:01 PM => 13 Starting process with  {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/15/2014 2:53:01 PM => 13 4files found
+01/15/2014 2:54:31 PM => 12 Starting process with  {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/15/2014 2:54:31 PM => 12 4files found
+01/15/2014 3:03:44 PM => 6 Starting process with  {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/15/2014 3:03:44 PM => 6 4files found
+01/15/2014 4:46:00 PM => 10 Starting process with  {     "AmtAvailable": 300000,     "CalcCrops": [         {             "Area": 0.404686,             "Crop": {                 "Name": "Maize"             },             "Profit": 200,             "id": 0         }     ],     "CalcFertilizers": [         {             "Fertilizer": {                 "Name": "Urea"             },             "Price": 120000,             "id": 0         }     ],     "CalcCropFertRatios": [],     "FarmerName": "David",     "Id": "2c1902f2-0f75-4aed-9907-4ff05fd3afe0",     "Imei": "356422050612627" }
+01/15/2014 4:46:00 PM => 10 4files found
+01/15/2014 4:46:00 PM => 10 Using D:\gf-projects\dotnet\MyTestService\MyTestService\calculations\workbook1.xlsm
+01/15/2014 4:46:20 PM => 10 B4 running Optimize_Solver
+01/15/2014 4:46:22 PM => 10 AFTER running Optimize_Solver
+01/15/2014 4:46:22 PM => 10 B4 Copying Crop-Fertilizer-Amounts
+01/15/2014 4:46:22 PM => 10 AFTER Copying Crop-Fertilizer-Amounts
+01/15/2014 4:46:22 PM => 10 B4 Copying Total Fertilizer Required
+01/15/2014 4:46:22 PM => 10 AFTER Copying Total Fertilizer Required
+01/15/2014 4:46:22 PM => 10 B4 Copying Crop Yeild Increase and Net Returns
+01/15/2014 4:46:22 PM => 10 AFTER Copying Crop Yeild Increase and Net Returns
+01/15/2014 4:46:22 PM => 10 Closing
+01/15/2014 4:46:24 PM => 10 Releasing obj System.__ComObject
+01/15/2014 4:46:24 PM => 10 Releasing obj System.__ComObject
+01/15/2014 4:46:24 PM => 10 Releasing obj Microsoft.Office.Interop.Excel.ApplicationClass
