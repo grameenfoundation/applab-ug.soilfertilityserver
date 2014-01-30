@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using System.Web.Script.Serialization;
+//using Microsoft.CSharp.RuntimeBinder.Binder;
 
-using Microsoft.CSharp;
-
-using System.Threading;
 using System.IO;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Diagnostics;
 using Microsoft.Office.Interop.Excel;
 
 namespace Optimizer
@@ -27,30 +27,15 @@ namespace Optimizer
         public static object key2 = new object();
         public static String[] filesInUse = new String[10];
 
+
         [WebMethod]
         public String Optimize(String json)
         {
-            //Calculator c = new Calculator(key, this);
-            Calculator c = new Calculator();
-
-            return c.openExel(json);
-        }
-    }
-
-    public class Calculator {
-
-        public Calculator()//object key, Service1 s
-        {
-           // this.key = key;
-           // this.s = s;
-        }
-
-        private String json;
-
-        public string Json
-        {
-            get { return json; }
-            set { json = value; }
+            lock (key)
+            {
+                String jsonStr = openExel(json);
+                return jsonStr;
+            }
         }
 
         protected virtual bool IsFileLocked(FileInfo file)
@@ -63,10 +48,6 @@ namespace Optimizer
             }
             catch (IOException)
             {
-                //the file is unavailable because it is:
-                //still being written to
-                //or being processed by another thread
-                //or does not exist (has already been processed)
                 return true;
             }
             finally
@@ -91,11 +72,11 @@ namespace Optimizer
 
             String[] fileNames = Directory.GetFiles(targetPath, "*.xlsm");
 
-            log(fileNames.Length + "files found");
+            //log(fileNames.Length + "files found");
 
             String fileName = "";
 
-            lock (Service1.key2)
+            lock (key2)
             {
                 do
                 {
@@ -131,60 +112,66 @@ namespace Optimizer
             return fileName;
         }
 
-        private void log(string message)
+        public String openExel(String json)
         {
-            String timeNow = DateTime.Now.ToString(@"MM\/dd\/yyyy h\:mm\:ss tt");
-            String logFile = AppDomain.CurrentDomain.BaseDirectory + "log.txt";
-            lock (Service1.key)
-            {
-                File.AppendAllText(logFile, timeNow +" => " + Thread.CurrentThread.ManagedThreadId + " " +message+"\n");
-            }
-        }
 
-        public String openExel(String json)//Object obj
-        {
-            this.json = "";
-            // String json = (String)obj;
-
+            //string to hold return value
             String jsonStr = "";
 
-            log("Starting process with " + json);
+            Process[] P0, P1;
+            P0 = Process.GetProcessesByName("Excel");
+            Excel.Application excelApp = new Excel.Application();
 
-           string destFile = getAvailableFile();
+            int I, J;
+            P1 = Process.GetProcessesByName("Excel");
+            I = 0;
 
-           if (destFile == "" || destFile == null)
-               return "ERROR";
-
-           log("Using " + destFile);
-
-            try
+            if (P1.Length > 1)
             {
+                for (I = 0; I < P1.Length; I++)
+                {
+                    for (J = 0; J < P0.Length; J++)
+                        if (P0[J].Id == P1[I].Id) break;
+                    if (J == P0.Length) break;
+                }
+            }
 
-                Application excelApp = new Application();
-                excelApp.Visible = true;
+            Process excelProcess_4_thisRequests = P1[I];
 
+            excelApp.Visible = true;
 
-                Workbook excelWorkbook = excelApp.Workbooks.Open(destFile,
-                            0, false, 5, "", "", false, XlPlatform.xlWindows, "",
-                            true, false, 0, true, false, false);
+            string targetFile = getAvailableFile();
+            if (targetFile == "" || targetFile == null)
+                return "ERROR";
+
+            Excel.Workbook excelWorkbook = excelApp.Workbooks.Open(targetFile,
+                        0, false, 5, "", "", false, Excel.XlPlatform.xlWindows, "",
+                        true, false, 0, true, false, false);
+            if (excelWorkbook.HasPassword)
                 excelWorkbook.Unprotect("52Fre");
-
-                Worksheet excelWorksheet = (Worksheet)excelWorkbook.Worksheets["Fertilizer Optimization"];
-                excelWorksheet.Unprotect("52Fre");
-
-            // Thread.Sleep(10000);
-            //================================================
 
             excelApp.Run("Reset_Form");
 
             try
             {
+
+                Worksheet excelWorksheet = (Worksheet)excelWorkbook.Worksheets["Fertilizer Optimization"];
+
+                try
+                {
+                    excelWorksheet.Unprotect("52Fre");
+                }
+                catch
+                {
+                    //log("Ooops, work sheet was not protected");
+                }
+
+                //Thread.Sleep(10000);
                 //================================================
+                excelApp.Run("Reset_Form");
 
                 JavaScriptSerializer ser = new JavaScriptSerializer();
-                // String jsonStr = ser.Serialize(calc);
-
-                Calc calc2 = ser.Deserialize<Calc>(json);
+                Calc calc2 = ser.Deserialize<Calc>(json); 
 
                 if (calc2.Id == null)
                 {
@@ -192,7 +179,7 @@ namespace Optimizer
                     calc2.Id = g.ToString();
                 }
 
-                calc2.File = destFile;
+                calc2.File = targetFile;
 
                 foreach (CalcCrop cc in calc2.CalcCrops)
                 {
@@ -207,23 +194,11 @@ namespace Optimizer
 
                 excelWorksheet.get_Range("C34", "C34").Value = calc2.AmtAvailable;
 
-
-                Range excelCell = (Range)excelWorksheet.get_Range("M1", "M1");
-
-                excelCell.Value = json;
-
-                log("B4 running Optimize_Solver");
-
-                //~~> Run the macros by supplying the necessary arguments
-                excelApp.Run("Optimize_Solver");//comma separated params
-
-                log("AFTER running Optimize_Solver");
-
+                //=======================================
+                excelApp.Run("Optimize_Solver");
 
                 Double totReturns = getDoubleValue(excelWorksheet, "V76");
                 calc2.TotNetReturns = totReturns;
-
-                log("B4 Copying Crop-Fertilizer-Amounts");
 
                 foreach (CalcCrop cc in calc2.CalcCrops)
                 {
@@ -239,22 +214,16 @@ namespace Optimizer
                     }
                 }
 
+                //============================================
 
-                log("AFTER Copying Crop-Fertilizer-Amounts");
-
-                //================================================================================================
-
-                log("B4 Copying Total Fertilizer Required");
                 foreach (CalcFertilizer cf in calc2.CalcFertilizers)
                 {
                     Double val = getDoubleValue(excelWorksheet, getTotalFertilizerRequiredCell(cf));
                     cf.TotalRequired = val;
                 }
-                log("AFTER Copying Total Fertilizer Required");
 
-                //=================================================================================================
+                //============================================
 
-                log("B4 Copying Crop Yeild Increase and Net Returns");
                 foreach (CalcCrop cc in calc2.CalcCrops)
                 {
                     Double val = getDoubleValue(excelWorksheet, getCropYeildIncreaseCell(cc));
@@ -263,51 +232,31 @@ namespace Optimizer
                     val = getDoubleValue(excelWorksheet, getCropNetReturnsCell(cc));
                     cc.NetReturns = val;
                 }
-                log("AFTER Copying Crop Yeild Increase and Net Returns");
-
 
                 jsonStr = ser.Serialize(calc2);
 
-                log("Closing");
-
-                excelWorkbook.Save();
-                excelWorkbook.Close();
-                excelApp.Quit();
-
-                //~~> Clean Up
-                releaseObject(excelWorksheet);
-                releaseObject(excelWorkbook);
-                releaseObject(excelApp);
-
             }
             catch (Exception ex)
             {
+                //log("Closing after ERROR");
 
-                log("Closing after ERROR");
-
-                log(ex.StackTrace);
-                excelWorkbook.Save();
-                excelWorkbook.Close();
-                excelApp.Quit();
-
-                //~~> Clean Up
-                releaseObject(excelWorksheet);
-                releaseObject(excelWorkbook);
-                releaseObject(excelApp);
             }
             finally
             {
-                 
+                excelWorkbook.Save();
+                excelWorkbook.Close();
+                excelApp.Quit();
+
+                //~~> Clean Up
+                releaseObject(excelApp);
+                releaseObject(excelWorkbook);
+
+                //kill the damn process
+                excelProcess_4_thisRequests.Kill();
+
+                releaseFile(targetFile);
             }
 
-            }
-            catch (Exception ex)
-            {
-                log("Some wired exception occured, see below");
-                log(ex.StackTrace);
-            }
-
-            //this.json = jsonStr;
             return jsonStr;
         }
 
@@ -323,29 +272,14 @@ namespace Optimizer
         //~~> Release the objects
         private void releaseObject(object obj)
         {
-
-            //xlApp.Quit();
-
-            //release all memory - stop EXCEL.exe from hanging around.
-            //if (xlWorkBook != null) { Marshal.ReleaseComObject(xlWorkBook); } //release each workbook like this
-            //if (xlWorkSheet != null) { Marshal.ReleaseComObject(xlWorkSheet); } //release each worksheet like this
-            //if (xlApp != null) { Marshal.ReleaseComObject(xlApp); } //release the Excel application
-            //xlWorkBook = null; //set each memory reference to null.
-            //xlWorkSheet = null;
-            // xlApp = null;
-            //GC.Collect();
-
             try
             {
-                log("Releasing obj " + obj.ToString());
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(obj);
                 obj = null;
             }
             catch (Exception ex)
             {
-                log("Error releasing obj " + obj.ToString());
-                log(ex.Message);
-
+                
                 obj = null;
             }
             finally
@@ -388,7 +322,7 @@ namespace Optimizer
 
         }
 
-        private void initializeFertilizerCell(CalcFertilizer cf,  Worksheet excelWorksheet)
+        private void initializeFertilizerCell(CalcFertilizer cf, Worksheet excelWorksheet)
         {
             switch (cf.Fertilizer.Name.ToLower())
             {
@@ -409,7 +343,7 @@ namespace Optimizer
 
         private void populateCell(Worksheet excelWorksheet, String cell, int value)
         {
-             Range soyabeanHa = ( Range)excelWorksheet.get_Range(cell, cell);
+            Range soyabeanHa = (Range)excelWorksheet.get_Range(cell, cell);
             soyabeanHa.Value = value;
         }
 
@@ -435,7 +369,7 @@ namespace Optimizer
         {
             String fertilizerColumn = "";
             String cropRow = "";
-            
+
             switch (fert.Name.ToLower())
             {
                 case "urea":
