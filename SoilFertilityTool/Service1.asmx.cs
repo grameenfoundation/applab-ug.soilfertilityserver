@@ -163,7 +163,7 @@ namespace Optimizer
                 }
                 catch
                 {
-                    //log("Ooops, work sheet was not protected");
+                    Log("Ooops, work sheet was not protected");
                 }
 
                 //Thread.Sleep(10000);
@@ -238,8 +238,7 @@ namespace Optimizer
             }
             catch (Exception ex)
             {
-                //log("Closing after ERROR");
-
+                Log(ex.StackTrace);
             }
             finally
             {
@@ -279,7 +278,6 @@ namespace Optimizer
             }
             catch (Exception ex)
             {
-                
                 obj = null;
             }
             finally
@@ -498,6 +496,19 @@ namespace Optimizer
             }
 
             return column + cropRow;
+        }
+
+        public static void Log(string logMessage)
+        {
+            String logname = AppDomain.CurrentDomain.BaseDirectory + "logs\\" + DateTime.Now.Year+ "-" + DateTime.Now.Month.ToString("D2") + "-" + DateTime.Now.Day.ToString("D2") + ".log";
+            using (StreamWriter w = File.AppendText(logname))
+            {
+                w.WriteLine("{0} {1}", DateTime.Now.ToLongTimeString(),
+                    DateTime.Now.ToLongDateString());
+                w.WriteLine("  ");
+                w.WriteLine("  {0}", logMessage);
+                w.WriteLine("-------------------------------");
+            }
         }
     }
 }

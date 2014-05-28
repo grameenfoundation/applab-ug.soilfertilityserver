@@ -10,7 +10,7 @@ namespace Optimizer
         private int id;
         private Crop crop;
         private Calc calc;
-        private int profit;
+        private Double profit;
         private Double area, yieldIncrease, netReturns;
 
         public CalcCrop()
@@ -49,7 +49,7 @@ namespace Optimizer
             set { area = value; }
         }
 
-        public int Profit
+        public Double Profit
         {
             get { return profit; }
             set { profit = value; }

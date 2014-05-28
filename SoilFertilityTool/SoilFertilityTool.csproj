@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\soilFertilityTool.pubxml" />
