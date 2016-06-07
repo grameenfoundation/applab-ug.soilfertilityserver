@@ -1,0 +1,17 @@
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\Logic.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\Logic.pdb
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\Antlr3.Runtime.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\EPPlus.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\Newtonsoft.Json.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\WebGrease.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\Antlr3.Runtime.pdb
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\EPPlus.xml
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\Newtonsoft.Json.xml
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\obj\Release\Logic.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\obj\Release\Logic.pdb
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\obj\Release\Logic.csprojResolveAssemblyReference.cache
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\Logic.dll.config
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\EntityFramework.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\EntityFramework.xml
+C:\Users\hp\Google Drive\Grameen\Solution\Logic\bin\Release\EntityFramework.SqlServer.xml

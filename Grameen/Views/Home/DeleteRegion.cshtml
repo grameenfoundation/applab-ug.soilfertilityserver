@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Delete Region";
+}
+@model Optimize.Region
+
+@using (Html.BeginForm("DeleteRegion", "Home", FormMethod.Post, new {enctype = "multipart/form-data"}))
+{
+    <div class="well well-sm">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Delete Region</h2>
+                @Html.ValidationSummary(true)
+
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <fieldset class="col-sm-7">
+            <div class="row form-group">
+                <div class="col-md-5  ">
+                    Region Name
+                </div>
+                <div class="col-md-7">
+                    <b>
+                        @Html.DisplayFor(model => model.Name, new {@class = "form-control"})</b>
+                </div>
+
+            </div>
+            <div class="row form-group">
+                <div class="col-md-5  ">
+                    Spreadsheet Units
+                </div>
+                <div class="col-md-7">
+                    <b>
+                        @Html.DisplayFor(model => model.Units, new {@class = "form-control"})</b>
+                </div>
+
+            </div>
+
+            <div class=" col-sm-offset-8">
+                <input type="submit" value="Delete Region" class="btn btn-danger "/>
+            </div>
+        </fieldset>
+        <div class="row color-box col-sm-5">
+            <div class="shadow">
+                <div title="Important Notes" class="info-tab danger-icon">&nbsp;</div>
+                <div class="danger-box">
+                    <p>
+                    <strong>Note:</strong> Please ensure that the region being deleted is the one intended
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+}

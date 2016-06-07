@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Resources";
+}
+
+<div class="well well-sm">
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Android APK</h2>
+            <p>
+                Download the most recent Android APK for the soil fertility optimisation tool
+            </p>
+            <p>
+                @Html.ActionLink(@"Download >>", "apkLink", "Resources", new {@class = "btn btn-success", @target = "_blank"})
+
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h2>User Manual</h2>
+            <p>Download the user manual for use with the android Soil Fertilizer Optimisation Tool</p>
+            <p>
+                @*<a class="btn btn-success">Download &raquo;</a>*@
+                @Html.ActionLink(@"Download >>", "userManualLink", "Resources", new {@class = "btn btn-success", @target = "_blank"})
+            </p>
+        </div>
+    </div>
+</div>
