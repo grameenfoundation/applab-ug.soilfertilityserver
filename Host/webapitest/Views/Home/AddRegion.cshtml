@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Add Region";
+}
+@model Optimize.Region
+
+@using (Html.BeginForm("AddRegion", "Home", FormMethod.Post, new {enctype = "multipart/form-data"}))
+{
+    <div class="well well-sm">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Add Region</h2>
+                @Html.ValidationSummary(true)
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <fieldset class="col-sm-7">
+            <div class="row form-group">
+                <div class="col-md-5  ">
+                    Region Name
+                </div>
+                <div class="col-md-7">
+                    @Html.TextBoxFor(model => model.Name, new {@class = "form-control", @placeholder = "Enter Region Name"})
+                    @Html.ValidationMessageFor(model => model.Name)
+                </div>
+
+            </div>
+            <div class="row form-group">
+                <div class="col-md-5  ">
+                    Spreadsheet Units
+                </div>
+                <div class="col-md-7">
+                    @*@Html.TextBoxFor(model => model.Units, new { @class = "form-control", @placeholder = "Select Units of the spreadsheet" })*@
+                    @Html.RadioButtonFor(m => m.Units, "Acres") Acres
+                    @Html.RadioButtonFor(m => m.Units, "Hectares") Hectares
+                    @Html.ValidationMessageFor(model => model.Units)
+                </div>
+
+            </div>
+            <div class="row form-group">
+                <div class="col-md-5  ">
+                    Upload Spread sheet for the Region
+                </div>
+                <div class="col-md-7">
+                    <input name="spreadSheet" type="file"/>
+                </div>
+            </div>
+            <div class="  col-sm-offset-8">
+                <input type="submit" value="Upload Region" class="btn btn-primary "/>
+            </div>
+        </fieldset>
+
+        <div class="row color-box col-sm-5">
+            <div class="shadow">
+                <div title="Important Notes" class="info-tab note-icon">&nbsp;</div>
+                <div class="note-box">
+                    <p>
+                    <strong>Note:</strong> Please ensure that all fields are added
+                    <ol>
+                        <li>
+                            Ensure that the Region Name being added doesnot already exist
+                        </li>
+                        <li>
+                            The units must match those used with in the spreadsheet
+                        </li>
+                        <li>
+                            Ensure that the spreadsheet to be uploaded is in <code>.xlsm</code>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('input[type=file]').change(function() {
+                var val = $(this).val().toLowerCase();
+                var regex = new RegExp("(.*?)\.(xlsm)$"); //docx|doc|pdf|xml|bmp|ppt|
+                if (!(regex.test(val))) {
+                    $(this).val('');
+                    alert('Please select a Macro enabled excel file!!');
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Optimize.Activity>
+
+@{
+    ViewBag.Title = "Activity Report";
+}
+
+<h2>Activity Report</h2>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th></th>
+        <th>
+            Date Time
+        </th>
+        <th>
+            Farmer Name
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.calculation.Imei)
+        </th>
+        <th>
+            Farmer Inputs
+        </th>
+        <th>
+            Fertilizer Optimisation
+        </th>
+        <th>
+            Expected Average Effects per Acre
+        </th>
+        <th>
+            Total Net Returns
+        </th>
+
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dateTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.calculation.FarmerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.calculation.Imei)
+                </td>
+                <td>
+                    <b>Crop</b><br/>
+                    @foreach (var crop in item.calculation.CalcCrops)
+                    {
+                        @Html.Raw(crop.Crop.Name + " on " + crop.Area + " acres at " + crop.Profit + "UGX per Kg")
+                        <br/>
+                    }
+                    <b>Fertilizer</b><br/>
+                    @foreach (var fertilizer in item.calculation.CalcFertilizers)
+                    {
+                        @Html.Raw(fertilizer.Fertilizer.Name + " at " + fertilizer.Price + "UGX per Kg")
+                        <br/>
+                    }
+                    <b>Amount Available : </b>
+                    @Html.DisplayFor(modelItem => item.calculation.AmtAvailable)
+                </td>
+                <td>
+                    <b>
+                        Crop | Fertilizer | Application Rate-Kg/Acre
+                    </b> <br/>
+                    @foreach (var cropFertRatio in item.calculation.CalcCropFertilizerRatios)
+                    {
+                        @Html.Raw(cropFertRatio.Crop.Name + " | " + cropFertRatio.Fert.Name + " | " + cropFertRatio.Amt)
+                        <br/>
+                    }
+                </td>
+                <td>
+                    <b>
+                        Crop | Yield Increases | Net Reurns
+                    </b><br/>
+                    @foreach (var crop in item.calculation.CalcCrops)
+                    {
+                        @Html.Raw(crop.Crop.Name + " | " + crop.YieldIncrease + " | " + crop.NetReturns)
+                        <br/>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.calculation.TotNetReturns)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

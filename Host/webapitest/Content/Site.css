@@ -1,0 +1,81 @@
+﻿body {
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+/* Set padding to keep content from hitting the edges */
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+input,
+select,
+textarea { max-width: 280px; }
+
+/* styles for validation helpers */
+
+.field-validation-error { color: #b94a48; }
+
+.field-validation-valid { display: none; }
+
+input.input-validation-error { border: 1px solid #b94a48; }
+
+input[type="checkbox"].input-validation-error { border: 0 none; }
+
+.validation-summary-errors { color: #b94a48; }
+
+.validation-summary-valid { display: none; }
+
+
+.required:after {
+    color: #b94a48;
+    content: " *";
+    font-weight: bold;
+}
+
+/* Color Box*/
+
+.color-box {
+    margin-top: 20px;
+    padding-left: 17px;
+}
+
+.color-box .shadow { margin: 0; }
+
+.shadow {
+    background: #F7F8F9;
+    margin: 10px 0;
+    padding: 3px;
+}
+
+.note-box {
+    background: #d5e9f6;
+    color: #144261;
+}
+
+.note-box, .warning-box, .tip-box, .danger-box { padding: 0 15px 15px 25px; }
+
+.note-icon { background-position: 0 0; }
+
+.info-tab {
+    background: url("images/sprite.png") no-repeat;
+    float: left;
+    height: 50px;
+    margin-left: -21px;
+    position: relative;
+    top: 6px;
+    width: 36px;
+}
+
+.danger-box {
+    background: #F2D9D9;
+    color: #00131D;
+}
+
+.danger-icon { background-position: 0 -58px; }
+
+.tip-icon { background-position: 0 -58px; }
