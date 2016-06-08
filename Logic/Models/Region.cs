@@ -1,12 +1,10 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using OfficeOpenXml.FormulaParsing.Utilities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Optimize
 {
     public class Region
     {
+        [Key]
         public int Id { get; set; }
 
         [Required]

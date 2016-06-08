@@ -12,11 +12,12 @@ namespace Grameen.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext database = new ApplicationDbContext();
+
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
-
-            var database = OptimizerManager.DatabaseCheck();
+             
             var report = new List<RegionCropView>();
 
             if (database.RegionCrops != null)
@@ -47,11 +48,11 @@ namespace Grameen.Controllers
             {
                 if (spreadSheet.ContentLength > 0)
                 {
-                    var database = OptimizerManager.DatabaseCheck();
+                    //var database = OptimizerManager.DatabaseCheck();
 
                     if (!database.Regions.Any(a => a.Name.Equals(newRegion.Name)))
                     {
-                        int newRegionId = database.Regions.Count != 0 ? database.Regions.Max(a => a.Id) + 1 : 0;
+                        int newRegionId = database.Regions.Count() != 0 ? database.Regions.Max(a => a.Id) + 1 : 0;
                         newRegion.Id = newRegionId;
                         string fileName = "Optimizer_" + newRegionId + ".xlsm";
 
@@ -65,7 +66,7 @@ namespace Grameen.Controllers
                         string path = Path.Combine(directory, fileName);
                         spreadSheet.SaveAs(path);
                             //Save new spreadsheet in C:\inetpub\wwwroot\Temp\ with Optimizer_newIndex
-                        OptimizerManager.DatabaseUpdate(path, newRegion, database);
+                       ////// OptimizerManager.DatabaseUpdate(path, newRegion, database);
                             //Update the spreadsheet with the database entries
 
                         return RedirectToAction("Index");
@@ -94,7 +95,7 @@ namespace Grameen.Controllers
 
         public ActionResult DeleteRegion(int id = 0)
         {
-            var database = OptimizerManager.DatabaseCheck();
+            //var database = OptimizerManager.DatabaseCheck();
             var region = database.Regions.First(a => a.Id == id);
             return View(region);
         }

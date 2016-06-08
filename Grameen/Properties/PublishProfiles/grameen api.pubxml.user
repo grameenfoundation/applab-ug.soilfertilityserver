@@ -57,6 +57,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Antlr3.Runtime.pdb">
       <publishTime>02/10/2016 20:19:26</publishTime>
     </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/21/2016 11:00:52</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>05/21/2016 11:00:52</publishTime>
+    </File>
     <File Include="bin/EPPlus.dll">
       <publishTime>02/20/2016 19:38:03</publishTime>
     </File>
@@ -64,22 +70,49 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/20/2016 19:55:30</publishTime>
     </File>
     <File Include="bin/Grameen.dll">
-      <publishTime>06/01/2016 15:42:47</publishTime>
+      <publishTime>06/07/2016 14:52:56</publishTime>
     </File>
     <File Include="bin/Grameen.pdb">
       <publishTime>03/11/2016 14:46:09</publishTime>
     </File>
     <File Include="bin/Logic.dll">
-      <publishTime>06/01/2016 15:42:46</publishTime>
+      <publishTime>06/07/2016 14:52:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>06/07/2016 14:27:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>06/07/2016 14:27:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>06/07/2016 14:49:47</publishTime>
     </File>
     <File Include="bin/Microsoft.Office.Interop.Excel.dll">
       <publishTime>03/14/2016 11:44:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>06/07/2016 14:31:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>06/07/2016 14:52:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>06/07/2016 14:33:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>06/07/2016 14:33:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>06/07/2016 14:39:19</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>02/10/2016 20:19:24</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>02/10/2016 20:19:20</publishTime>
+      <publishTime>06/07/2016 14:39:19</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>06/07/2016 14:31:33</publishTime>
     </File>
     <File Include="bin/Spire.License.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -484,7 +517,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/11/2016 13:47:45</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>06/01/2016 15:40:23</publishTime>
+      <publishTime>06/07/2016 14:52:14</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>02/10/2016 20:19:20</publishTime>
@@ -733,7 +766,34 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/21/2016 23:54:29</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>06/01/2016 15:40:23</publishTime>
+      <publishTime>06/07/2016 14:45:22</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/_ChangePasswordPartial.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/_RemoveAccountPartial.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
+    </File>
+    <File Include="Views/Account/_SetPasswordPartial.cshtml">
+      <publishTime>06/07/2016 13:25:56</publishTime>
     </File>
     <File Include="Views/Home/AddRegion.cshtml">
       <publishTime>06/01/2016 15:40:23</publishTime>
@@ -775,7 +835,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/01/2016 15:40:23</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/01/2016 15:42:48</publishTime>
+      <publishTime>06/07/2016 14:52:58</publishTime>
     </File>
   </ItemGroup>
 </Project>

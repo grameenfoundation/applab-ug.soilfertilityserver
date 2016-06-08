@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Optimize
 {
@@ -9,6 +9,8 @@ namespace Optimize
         //public Region Region { get; set; }
 
         //public Crop Crop { get; set; }
+        [Key]
+        public int  Id { get; set; }
 
         public int RegionId { get; set; }
 

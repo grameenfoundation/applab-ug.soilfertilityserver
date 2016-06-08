@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Web.Script.Serialization;
 using Optimize;
 using Microsoft.Office.Interop.Excel;
 using OfficeOpenXml;
@@ -13,7 +12,8 @@ namespace Logic
     public class Optimizer
     {
         public Calc calc;
-
+         
+ 
         public string optimisationWorksheet = "Fertilizer Optimization";
 
         public Calc Optimize(Calc json)
@@ -21,7 +21,7 @@ namespace Logic
             calc = json;
             try
             {
-                calc.Database = OptimizerManager.DatabaseCheck();
+                //calc.Database = database;//OptimizerManager.DatabaseCheck();
 
                 FileInfo newFile = null;
                 if (CreateCopyofFile(calc.Region, out newFile))
