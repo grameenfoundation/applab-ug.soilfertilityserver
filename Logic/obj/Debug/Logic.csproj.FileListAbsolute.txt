@@ -41,5 +41,6 @@ C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\bin\Debug\M
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\obj\Debug\Logic.dll
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\obj\Debug\Logic.pdb

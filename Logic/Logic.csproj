@@ -87,20 +87,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Database.cs" />
-    <Compile Include="Models\RegionCrop.cs" />
-    <Compile Include="Models\Region.cs" />
-    <Compile Include="Models\Calc.cs" />
-    <Compile Include="Models\CalcCrop.cs" />
-    <Compile Include="Models\CalcCropFertilizerRatio.cs" />
-    <Compile Include="Models\CalcFertilizer.cs" />
-    <Compile Include="Models\Activity.cs" />
-    <Compile Include="Models\Error.cs" />
-    <Compile Include="Models\Crop.cs" />
-    <Compile Include="Models\CropFert.cs" />
-    <Compile Include="Models\Fertilizer.cs" />
+    <Compile Include="Entities\Database.cs" />
+    <Compile Include="Entities\RegionCrop.cs" />
+    <Compile Include="Entities\Region.cs" />
+    <Compile Include="Entities\Calc.cs" />
+    <Compile Include="Entities\CalcCrop.cs" />
+    <Compile Include="Entities\CalcCropFertilizerRatio.cs" />
+    <Compile Include="Entities\CalcFertilizer.cs" />
+    <Compile Include="Entities\Activity.cs" />
+    <Compile Include="Entities\Error.cs" />
+    <Compile Include="Entities\Crop.cs" />
+    <Compile Include="Entities\CropFert.cs" />
+    <Compile Include="Entities\Fertilizer.cs" />
     <Compile Include="OptimizerManager.cs" />
-    <Compile Include="OptimizerReport.cs" />
     <Compile Include="OptimizerLog.cs" />
     <Compile Include="OptimizerOutput.cs" />
     <Compile Include="Optimizer.cs" />

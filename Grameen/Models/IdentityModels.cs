@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Optimize;
+using Database = System.Data.Entity.Database;
 
 namespace Grameen.Models
 {
@@ -14,6 +15,8 @@ namespace Grameen.Models
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
+            //disable initializer
+            Database.SetInitializer<ApplicationDbContext>(null);
         }
 
         public DbSet<Crop> Crops { get; set; }

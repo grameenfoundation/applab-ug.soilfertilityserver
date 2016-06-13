@@ -25,9 +25,9 @@ namespace Grameen.Controllers
                 report = database.RegionCrops.GroupBy(a => a.RegionId).Select(a =>
                     new RegionCropView
                     {
-                        Id = database.Regions.First(b => b.Id == a.Key).Id,
-                        Region = database.Regions.First(b => b.Id == a.Key).Name,
-                        Units = database.Regions.First(b => b.Id == a.Key).Units,
+                        Id = database.Regions.FirstOrDefault(b => b.Id == a.Key).Id,
+                        Region = database.Regions.FirstOrDefault(b => b.Id == a.Key).Name,
+                        Units = database.Regions.FirstOrDefault(b => b.Id == a.Key).Units,
                         Crops = a.Where(b => b.RegionId == a.Key).Select(x => x.Crop)
                         //database.Crops.Where(z=> a.Select(x => x.Crop).ToList().Contains(z.Id)).Select(b=>b.Name)
                     }).ToList();
@@ -52,7 +52,7 @@ namespace Grameen.Controllers
 
                     if (!database.Regions.Any(a => a.Name.Equals(newRegion.Name)))
                     {
-                        int newRegionId = database.Regions.Count() != 0 ? database.Regions.Max(a => a.Id) + 1 : 0;
+                        int newRegionId =database.Regions.Count()!=0? database.Regions.Last().Id  + 1 : 0;
                         newRegion.Id = newRegionId;
                         string fileName = "Optimizer_" + newRegionId + ".xlsm";
 
@@ -65,9 +65,33 @@ namespace Grameen.Controllers
 
                         string path = Path.Combine(directory, fileName);
                         spreadSheet.SaveAs(path);
-                            //Save new spreadsheet in C:\inetpub\wwwroot\Temp\ with Optimizer_newIndex
-                       ////// OptimizerManager.DatabaseUpdate(path, newRegion, database);
-                            //Update the spreadsheet with the database entries
+                        ////Update database with the new entries
+                        //Save new Regions
+                        database.Regions.Add(new Region(){Id = newRegionId,Name = newRegion.Name,Units = newRegion.Units});
+
+                        var newRegionCrops = OptimizerManager.GetRegionCrops(path);
+                        if (newRegionCrops.Count != 0)
+                        {
+                            List<Crop> newCrops = newRegionCrops.Where(newRegionCrop => !database.Crops.Select(a => a.Name).Contains(newRegionCrop.Name)).ToList();
+                            //Save new Crops
+                            if (newCrops.Count != 0)
+                            {
+                                foreach (Crop newCrop in newCrops)
+                                {
+                                    database.Crops.Add(newCrop);
+                                }
+                            }
+
+                            //Save Region_Crop Entries
+                            
+                            foreach (var regionCrop in newRegionCrops)
+                            {
+                                database.RegionCrops.Add(new RegionCrop(){RegionId = newRegion.Id,Crop = regionCrop.Name});
+                            }
+                        }
+
+                        database.SaveChanges();
+                        database.Dispose();
 
                         return RedirectToAction("Index");
                     }
@@ -84,6 +108,7 @@ namespace Grameen.Controllers
             catch (Exception)
             {
                 ModelState.AddModelError("", "Kindly check your entries!");
+                database.Dispose();
                 return View(newRegion);
             }
         }
