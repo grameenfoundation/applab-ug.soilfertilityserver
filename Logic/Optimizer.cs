@@ -12,7 +12,6 @@ namespace Logic
     public class Optimizer
     {
         public Calc calc;
-         
  
         public string optimisationWorksheet = "Fertilizer Optimization";
 
@@ -21,8 +20,6 @@ namespace Logic
             calc = json;
             try
             {
-                //calc.Database = database;//OptimizerManager.DatabaseCheck();
-
                 FileInfo newFile = null;
                 if (CreateCopyofFile(calc.Region, out newFile))
                 {

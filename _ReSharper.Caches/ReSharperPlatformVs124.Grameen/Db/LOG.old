@@ -1,74 +1,24 @@
-2016/06/10-16:16:37.848 47f0 Recovering log #425
-2016/06/10-16:16:37.852 47f0 Level-0 table #435: started
-2016/06/10-16:16:37.894 47f0 Level-0 table #435: 949944 bytes OK
-2016/06/10-16:16:37.983 47f0 Delete type=0 #425
-2016/06/10-16:16:37.984 47f0 Delete type=3 #406
-2016/06/10-16:17:54.503 2f54 Compacting 1@0 + 1@1 files
-2016/06/10-16:17:54.531 2f54 Generated table #437: 402 keys, 74510 bytes
-2016/06/10-16:17:54.536 2f54 Generated table #438: 606 keys, 234791 bytes
-2016/06/10-16:17:54.536 2f54 Compacted 1@0 + 1@1 files => 309301 bytes
-2016/06/10-16:17:54.537 2f54 Delete type=2 #427
-2016/06/10-16:17:54.538 2f54 Delete type=2 #435
-2016/06/10-16:17:54.539 2f54 compacted to: files[ 0 2 44 0 0 0 0 ]
-2016/06/10-16:18:12.205 2f54 Compacting 1@1 + 5@2 files
-2016/06/10-16:18:12.269 2f54 Generated table #439: 805 keys, 2191720 bytes
-2016/06/10-16:18:12.493 2f54 Generated table #440: 78 keys, 2106131 bytes
-2016/06/10-16:18:12.613 2f54 Generated table #441: 13 keys, 2123325 bytes
-2016/06/10-16:18:12.850 2f54 Generated table #442: 65 keys, 2115483 bytes
-2016/06/10-16:18:12.978 2f54 Generated table #443: 2242 keys, 425676 bytes
-2016/06/10-16:18:12.978 2f54 Compacted 1@1 + 5@2 files => 8962335 bytes
-2016/06/10-16:18:12.979 2f54 Delete type=2 #429
-2016/06/10-16:18:12.980 2f54 Delete type=2 #430
-2016/06/10-16:18:12.982 2f54 Delete type=2 #431
-2016/06/10-16:18:12.983 2f54 Delete type=2 #432
-2016/06/10-16:18:12.985 2f54 Delete type=2 #433
-2016/06/10-16:18:12.986 2f54 Delete type=2 #438
-2016/06/10-16:18:12.986 2f54 compacted to: files[ 0 1 44 0 0 0 0 ]
-2016/06/11-11:21:20.028 2f54 Level-0 table #445: started
-2016/06/11-11:21:20.135 2f54 Level-0 table #445: 4012677 bytes OK
-2016/06/11-11:21:20.277 2f54 Delete type=0 #436
-2016/06/11-11:22:14.251 2f54 Compacting 1@0 + 1@1 files
-2016/06/11-11:22:14.320 2f54 Generated table #446: 402 keys, 73572 bytes
-2016/06/11-11:22:14.342 2f54 Generated table #447: 1879 keys, 2100274 bytes
-2016/06/11-11:22:14.399 2f54 Generated table #448: 178 keys, 1344747 bytes
-2016/06/11-11:22:14.399 2f54 Compacted 1@0 + 1@1 files => 3518593 bytes
-2016/06/11-11:22:14.400 2f54 Delete type=2 #437
-2016/06/11-11:22:14.470 2f54 Delete type=2 #445
-2016/06/11-11:22:14.471 2f54 compacted to: files[ 0 3 44 0 0 0 0 ]
-2016/06/11-11:38:53.454 2f54 Expanding@1 1+5 to 2+5
-2016/06/11-11:38:53.454 2f54 Compacting 2@1 + 5@2 files
-2016/06/11-11:38:53.679 2f54 Generated table #449: 716 keys, 3001022 bytes
-2016/06/11-11:38:53.932 2f54 Generated table #450: 71 keys, 2250349 bytes
-2016/06/11-11:38:54.000 2f54 Generated table #451: 14 keys, 2104917 bytes
-2016/06/11-11:38:54.331 2f54 Generated table #452: 2268 keys, 1946338 bytes
-2016/06/11-11:38:54.331 2f54 Compacted 2@1 + 5@2 files => 9302626 bytes
-2016/06/11-11:38:54.332 2f54 Delete type=2 #439
-2016/06/11-11:38:54.333 2f54 Delete type=2 #440
-2016/06/11-11:38:54.334 2f54 Delete type=2 #441
-2016/06/11-11:38:54.336 2f54 Delete type=2 #442
-2016/06/11-11:38:54.336 2f54 Delete type=2 #443
-2016/06/11-11:38:54.337 2f54 Delete type=2 #447
-2016/06/11-11:38:54.338 2f54 Delete type=2 #448
-2016/06/11-11:38:54.339 2f54 compacted to: files[ 0 1 43 0 0 0 0 ]
-2016/06/11-13:48:53.706 2f54 Level-0 table #454: started
-2016/06/11-13:48:53.818 2f54 Level-0 table #454: 3912544 bytes OK
-2016/06/11-13:48:53.821 2f54 Delete type=0 #444
-2016/06/11-13:48:56.602 2f54 Compacting 1@0 + 1@1 files
-2016/06/11-13:48:56.621 2f54 Generated table #455: 426 keys, 77320 bytes
-2016/06/11-13:48:56.634 2f54 Generated table #456: 1663 keys, 370268 bytes
-2016/06/11-13:48:56.634 2f54 Compacted 1@0 + 1@1 files => 447588 bytes
-2016/06/11-13:48:56.635 2f54 Delete type=2 #446
-2016/06/11-13:48:56.636 2f54 Delete type=2 #454
-2016/06/11-13:48:56.639 2f54 compacted to: files[ 0 2 43 0 0 0 0 ]
-2016/06/11-14:23:29.582 2f54 Compacting 1@1 + 4@2 files
-2016/06/11-14:23:29.621 2f54 Generated table #457: 722 keys, 3009601 bytes
-2016/06/11-14:23:29.690 2f54 Generated table #458: 71 keys, 2250349 bytes
-2016/06/11-14:23:30.112 2f54 Generated table #459: 14 keys, 2104917 bytes
-2016/06/11-14:23:30.232 2f54 Generated table #460: 2301 keys, 1974216 bytes
-2016/06/11-14:23:30.232 2f54 Compacted 1@1 + 4@2 files => 9339083 bytes
-2016/06/11-14:23:30.232 2f54 Delete type=2 #449
-2016/06/11-14:23:30.237 2f54 Delete type=2 #450
-2016/06/11-14:23:30.237 2f54 Delete type=2 #451
-2016/06/11-14:23:30.237 2f54 Delete type=2 #452
-2016/06/11-14:23:30.237 2f54 Delete type=2 #456
-2016/06/11-14:23:30.237 2f54 compacted to: files[ 0 1 43 0 0 0 0 ]
+2016/06/14-14:40:42.554 22ec Recovering log #472
+2016/06/14-14:40:42.558 22ec Level-0 table #480: started
+2016/06/14-14:40:42.580 22ec Level-0 table #480: 600190 bytes OK
+2016/06/14-14:40:42.586 22ec Delete type=0 #472
+2016/06/14-14:40:42.586 22ec Delete type=3 #470
+2016/06/14-14:41:05.786 3cf4 Compacting 1@0 + 1@1 files
+2016/06/14-14:41:05.789 3cf4 Generated table #482: 431 keys, 78181 bytes
+2016/06/14-14:41:05.794 3cf4 Generated table #483: 659 keys, 202955 bytes
+2016/06/14-14:41:05.794 3cf4 Compacted 1@0 + 1@1 files => 281136 bytes
+2016/06/14-14:41:05.797 3cf4 Delete type=2 #473
+2016/06/14-14:41:05.797 3cf4 Delete type=2 #480
+2016/06/14-14:41:05.798 3cf4 compacted to: files[ 0 2 43 0 0 0 0 ]
+2016/06/14-14:41:12.647 3cf4 Compacting 1@1 + 4@2 files
+2016/06/14-14:41:12.677 3cf4 Generated table #484: 733 keys, 3024199 bytes
+2016/06/14-14:41:12.913 3cf4 Generated table #485: 71 keys, 2250349 bytes
+2016/06/14-14:41:13.143 3cf4 Generated table #486: 14 keys, 2104917 bytes
+2016/06/14-14:41:13.154 3cf4 Generated table #487: 2066 keys, 725154 bytes
+2016/06/14-14:41:13.154 3cf4 Compacted 1@1 + 4@2 files => 8104619 bytes
+2016/06/14-14:41:13.155 3cf4 Delete type=2 #475
+2016/06/14-14:41:13.156 3cf4 Delete type=2 #476
+2016/06/14-14:41:13.157 3cf4 Delete type=2 #477
+2016/06/14-14:41:13.158 3cf4 Delete type=2 #478
+2016/06/14-14:41:13.159 3cf4 Delete type=2 #483
+2016/06/14-14:41:13.159 3cf4 compacted to: files[ 0 1 43 0 0 0 0 ]

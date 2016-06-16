@@ -48,13 +48,13 @@
                 <td>
                     @foreach (var crop in item.Crops)
                     {
-                        <b> @Html.Raw(crop + " , ")</b>
+                        <b class="badge"> @Html.Raw(crop)</b>
                     }
                 </td>
 
                 <td>
 
-                    @Html.ActionLink("Edit", "EditRegion", null, new {@class = "btn btn-warning"})
+                    @Html.ActionLink("Edit", "EditRegion", new { id = item.Id }, new { @class = "btn btn-warning" })
 
                     @Html.ActionLink("Delete", "DeleteRegion", new {id = item.Id}, new {@class = "btn btn-danger"})
 

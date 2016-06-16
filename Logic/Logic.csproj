@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Database.cs" />
+    <Compile Include="Entities\Version.cs" />
     <Compile Include="Entities\RegionCrop.cs" />
     <Compile Include="Entities\Region.cs" />
     <Compile Include="Entities\Calc.cs" />

@@ -42,12 +42,12 @@ namespace Grameen.Controllers
         {
             ViewBag.Title = "User Manual";
 
-            var apkFile = new FileInfo(@"C:\inetpub\wwwroot\Temp\User_manual.docx");
+            var userManualFile = new FileInfo(@"C:\inetpub\wwwroot\Temp\UserManual.docx");
 
             // Download the file
 
-            var filename = apkFile.Name;
-            var filepath = apkFile.FullName;
+            var filename = userManualFile.Name;
+            var filepath = userManualFile.FullName;
             var filedata = System.IO.File.ReadAllBytes(filepath);
             var contentType = MimeMapping.GetMimeMapping(filepath);
 

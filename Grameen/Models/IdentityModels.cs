@@ -24,5 +24,6 @@ namespace Grameen.Models
         public DbSet<RegionCrop> RegionCrops { get; set; }
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Error> Errors { get; set; }
+        public DbSet<Version> Versions { get; set; }
     }
 }
