@@ -1,17 +1,14 @@
 ﻿<RecentlyViewedMethods>
   <RecentlyViewedMethods>
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-%5Bcshtml%5D%20Views%5CResources/M%3AASP._Page_Views_Resources_Index_cshtml.Execute" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Database.Regions" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Database.VersionDateTime" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.OptimizeController.Post%28Optimize.Calc%29" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.OptimizeController.Get%28Optimize.Calc%29" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/F%3AGrameen.Controllers.HomeController.database" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3ALogic.Optimizer.Optimize%28Optimize.Calc%29" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.RegionCrop.Id" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Calc.Region" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Calc.Units" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3AOptimize.Calc.get_CalcCrops" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/F%3AGrameen.Controllers.ReportController.database" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.ReportController.ActivityReport" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-%5Bcshtml%5D%20Views%5CAccount/M%3AASP._Page_Views_Account_Login_cshtml.Execute" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Calc.Database" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/F%3AGrameen.Controllers.OptimizeController.database" />
     <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-%5Bcshtml%5D%20Views%5CHome/M%3AASP._Page_Views_Home_Index_cshtml.Execute" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3ALogic.OptimizerManager.GetRegionCrops%28System.String%29" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.HomeController.DeleteRegion%28Optimize.Region%29" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-%5Bcshtml%5D%20Views%5CHome/M%3AASP._Page_Views_Home_EditRegion_cshtml.Execute" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.HomeController.AddRegion%28Optimize.Region%2CSystem.Web.HttpPostedFileBase%29" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.HomeController.EditRegion%28Optimize.Region%2CSystem.Web.HttpPostedFileBase%29" />
   </RecentlyViewedMethods>
 </RecentlyViewedMethods>

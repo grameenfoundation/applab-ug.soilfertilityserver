@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<Grameen.Models.RegionCropView>
 
+
 <div class="well well-sm">
     @*<h1>FOT</h1>
             <p class="lead">Fertility Optimisation Tool</p>
@@ -8,56 +9,61 @@
     <div class="row">
         <div class="col-md-12">
             <h2>Regions</h2>
-            <p>
-                To manage all the available regions and update the soil fertility optimisation tools
-            </p>
+            @if (Request.IsAuthenticated)
+            {
+                <p>
+                    To manage all the available regions and update the soil fertility optimisation tools
+                </p>
 
-            @Html.ActionLink("Add New Region", "AddRegion", null, new {@class = "btn btn-primary"})
-
+                @Html.ActionLink("Add New Region", "AddRegion", null, new { @class = "btn btn-primary btn-sm" })
+            }
         </div>
 
     </div>
 </div>
 <table class="table table-condensed table-striped">
     <thead>
-    <tr>
-        <th>
-            Region
-        </th>
-        <th> Units </th>
-        <th>
-            Available Crops
-        </th>
+        <tr>
+            <th>
+                Region
+            </th>
+            <th> Units </th>
+            <th>
+                Available Crops
+            </th>
+            @if (Request.IsAuthenticated)
+            {
+                <th>
 
-        <th>
-
-        </th>
-
-    </tr>
+                </th>
+            }
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Region)
-            </td>
-            <td> @Html.DisplayFor(modelItem => item.Units)</td>
-            <td>
-                @foreach (var crop in item.Crops)
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Region)
+                </td>
+                <td> @Html.DisplayFor(modelItem => item.Units)</td>
+                <td>
+                    @foreach (var crop in item.Crops)
+                    {
+                        <b class="badge"> @Html.Raw(crop)</b>
+                    }
+                </td>
+                @if (Request.IsAuthenticated)
                 {
-                    <b> @Html.Raw(crop + " , ")</b>
+                    <td>
+
+                        @Html.ActionLink("Edit", "EditRegion", new { id = item.Id }, new { @class = "btn btn-warning btn-xs" })
+
+                        @Html.ActionLink("Delete", "DeleteRegion", new { id = item.Id }, new { @class = "btn btn-danger btn-xs" })
+
+                    </td>
                 }
-            </td>
-
-            <td>
-
-                @Html.ActionLink("Edit", "EditRegion", null, new {@class = "btn btn-warning"})
-
-                @Html.ActionLink("Delete", "DeleteRegion", new {id = item.Id}, new {@class = "btn btn-danger"})
-
-            </td>
-        </tr>
-    }
+            </tr>
+        }
     </tbody>
 </table>

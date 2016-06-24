@@ -10,7 +10,7 @@ namespace Grameen
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute("Default", "{controller}/{action}/{id}",
-                new {controller = "Resources", action = "Index", id = UrlParameter.Optional}
+                new {controller = "Home", action = "Index", id = UrlParameter.Optional}
                 );
         }
     }

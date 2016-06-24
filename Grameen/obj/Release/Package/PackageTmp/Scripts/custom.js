@@ -7,15 +7,16 @@ $(document).ready(function() {
         dom: "lrfBtip",
         // "processing": true,"serverSide": true,
         buttons: [
+            //{
+            //    extend: "pdfHtml5",
+
+            //    pageSize: "A4",
+            //    exportOptions: {
+            //        columns: ":visible"
+            //    }
+
+            //},
             {
-                extend: "pdfHtml5",
-
-                pageSize: "A4",
-                exportOptions: {
-                    columns: ":visible"
-                }
-
-            }, {
                 extend: "csvHtml5",
                 exportOptions: {
                     columns: ":visible"

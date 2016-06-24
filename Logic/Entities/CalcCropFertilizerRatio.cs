@@ -16,8 +16,8 @@ namespace Optimize
             this.Amt = amt;
         }
 
-        [Key]
-        public int Id { get; set; }
+        //[Key]
+        //public int Id { get; set; }
 
         public Crop Crop { get; set; }
 

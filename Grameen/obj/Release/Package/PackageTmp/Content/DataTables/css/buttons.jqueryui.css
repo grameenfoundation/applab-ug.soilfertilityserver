@@ -25,7 +25,7 @@ div.dt-button-info > div {
 
 div.dt-buttons {
   position: relative;
-  float: left;
+  /*float: left;*/
 }
 div.dt-buttons .dt-button {
   margin-right: 0;

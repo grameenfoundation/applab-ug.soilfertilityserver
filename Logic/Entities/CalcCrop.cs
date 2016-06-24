@@ -7,8 +7,8 @@ namespace Optimize
     {
         public  CalcCrop(){}
 
-        [Key]
-        public int Id { get; set; }
+        //[Key]
+        //public int Id { get; set; }
 
         public Crop Crop { get; set; }
 

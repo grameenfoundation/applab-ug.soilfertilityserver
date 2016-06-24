@@ -577,7 +577,7 @@ DataTable.ext.buttons.csvHtml5 = {
 	},
 
 	text: function ( dt ) {
-		return dt.i18n( 'buttons.csv', 'CSV' );
+		return dt.i18n( 'buttons.csv', 'Export to Excel' );
 	},
 
 	action: function ( e, dt, button, config ) {

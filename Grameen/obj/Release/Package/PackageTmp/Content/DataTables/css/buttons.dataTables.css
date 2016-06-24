@@ -162,10 +162,11 @@ a.dt-button:focus:not(.disabled) {
 
 div.dt-buttons {
   position: relative;
-  float: left;
+  /*float: left;*/
+  text-align: center;
 }
 div.dt-buttons.buttons-right {
-  float: right;
+  /*float: right;*/
 }
 
 div.dt-button-collection {

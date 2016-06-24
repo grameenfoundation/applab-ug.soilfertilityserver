@@ -14,8 +14,8 @@ namespace Optimize
 
         public Database Database { get; set; } //Store working database for all crops, regions and their respective jurisdiction
 
-        [Key]
-        public string Id { get; set; }
+        //[Key]
+        //public string Id { get; set; }
 
         public string File { get; set; }
 

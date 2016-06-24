@@ -14,8 +14,8 @@ namespace Optimize
             this.Fertilizer = fertilizer;
             this.Price = price;
         }
-        [Key]
-        public int Id { get; set; }
+        //[Key]
+        //public int Id { get; set; }
 
         public Fertilizer Fertilizer { get; set; }
 

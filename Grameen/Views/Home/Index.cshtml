@@ -1,27 +1,28 @@
 ﻿@model IEnumerable<Grameen.Models.RegionCropView>
 
-@if (Request.IsAuthenticated)
-{
-    <div class="well well-sm">
-        @*<h1>FOT</h1>
+
+<div class="well well-sm">
+    @*<h1>FOT</h1>
             <p class="lead">Fertility Optimisation Tool</p>
             <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
         </div>*@
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Regions</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Regions</h2>
+            @if (Request.IsAuthenticated)
+            {
                 <p>
                     To manage all the available regions and update the soil fertility optimisation tools
                 </p>
 
-                @Html.ActionLink("Add New Region", "AddRegion", null, new {@class = "btn btn-primary"})
-
-            </div>
-
+                @Html.ActionLink("Add New Region", "AddRegion", null, new { @class = "btn btn-primary btn-sm" })
+            }
         </div>
+
     </div>
-    <table class="table table-condensed table-striped">
-        <thead>
+</div>
+<table class="table table-condensed table-striped">
+    <thead>
         <tr>
             <th>
                 Region
@@ -30,14 +31,15 @@
             <th>
                 Available Crops
             </th>
+            @if (Request.IsAuthenticated)
+            {
+                <th>
 
-            <th>
-
-            </th>
-
+                </th>
+            }
         </tr>
-        </thead>
-        <tbody>
+    </thead>
+    <tbody>
         @foreach (var item in Model)
         {
             <tr>
@@ -51,16 +53,17 @@
                         <b class="badge"> @Html.Raw(crop)</b>
                     }
                 </td>
+                @if (Request.IsAuthenticated)
+                {
+                    <td>
 
-                <td>
+                        @Html.ActionLink("Edit", "EditRegion", new { id = item.Id }, new { @class = "btn btn-warning btn-xs" })
 
-                    @Html.ActionLink("Edit", "EditRegion", new { id = item.Id }, new { @class = "btn btn-warning" })
+                        @Html.ActionLink("Delete", "DeleteRegion", new { id = item.Id }, new { @class = "btn btn-danger btn-xs" })
 
-                    @Html.ActionLink("Delete", "DeleteRegion", new {id = item.Id}, new {@class = "btn btn-danger"})
-
-                </td>
+                    </td>
+                }
             </tr>
         }
-        </tbody>
-    </table>
-}
+    </tbody>
+</table>

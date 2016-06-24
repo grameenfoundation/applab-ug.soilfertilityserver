@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using Grameen.Models;
-using Logic;
 using Optimize;
 
 namespace Grameen.Controllers
@@ -21,17 +21,29 @@ namespace Grameen.Controllers
 
         public ActionResult ActivityReport()
         {
-            ViewBag.Title = "Activity Report"; 
+            ViewBag.Title = "Activity Report";
 
-            var activities = database.Activities.ToList().Select(a =>
-                new ActivityView
+            var activities = database.Activities.ToList();
+                 
+            var model = new List<ActivityView>();
+            foreach (Activity activity in activities)
+            {
+                try
                 {
-                    Date = a.DateTime,
-                    Calculation = new JavaScriptSerializer().Deserialize<Calc>(a.Calculation.ToString())
+                    model.Add(new ActivityView
+                    {
+                        Date = activity.DateTime,
+                        Calculation = new JavaScriptSerializer().Deserialize<Calc>(activity.Calculation.ToString())
+                    });
                 }
-                );
-
-            return View(activities.OrderByDescending(a => a.Date));
+                catch (Exception e)
+                {
+                    //database.Activities.Remove(activity);
+                    //database.SaveChanges();
+                   // throw;
+                }
+            }
+            return View(model);
         }
 
         public ActionResult ErrorReport()

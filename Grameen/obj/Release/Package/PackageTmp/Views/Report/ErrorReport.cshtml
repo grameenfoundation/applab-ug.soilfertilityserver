@@ -1,45 +1,47 @@
-﻿@model IEnumerable<Optimize.Error>
+﻿@model IEnumerable<Grameen.Models.ErrorView>
 
 @{
     ViewBag.Title = "Error Report";
 }
+@if (Request.IsAuthenticated)
+{
+    <h2>Error Report</h2>
 
-<h2>Error Report</h2>
 
-
-<table class="table">
-    <thead>
-    <tr>
-        <th></th>
-        <th>
-            @Html.DisplayNameFor(model => model.dateTime)
-        </th>
-        <th>
-            User Details
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.error)
-        </th>
-
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
-    {
+    <table class="table">
+        <thead>
         <tr>
-            <td></td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dateTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.calculation.FarmerName) @Html.Raw(" - ")
-                @Html.DisplayFor(modelItem => item.calculation.Imei)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.error)
-            </td>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date )
+            </th>
+            <th>
+                User Details
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.error)
+            </th>
 
         </tr>
-    }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date )
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Calculation.FarmerName) @Html.Raw(" - ")
+                    @Html.DisplayFor(modelItem => item.Calculation.Imei)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.error)
+                </td>
+
+            </tr>
+        }
+        </tbody>
+    </table>
+}
