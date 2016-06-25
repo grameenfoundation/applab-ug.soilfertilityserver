@@ -1,64 +1,24 @@
-2016/06/16-11:18:21.472 20cc Recovering log #481
-2016/06/16-11:18:21.474 20cc Level-0 table #489: started
-2016/06/16-11:18:21.479 20cc Level-0 table #489: 326095 bytes OK
-2016/06/16-11:18:21.504 20cc Delete type=0 #481
-2016/06/16-11:18:21.505 20cc Delete type=3 #479
-2016/06/16-11:19:08.704 5dbc Compacting 1@0 + 1@1 files
-2016/06/16-11:19:08.727 5dbc Generated table #491: 432 keys, 78123 bytes
-2016/06/16-11:19:08.751 5dbc Generated table #492: 612 keys, 228826 bytes
-2016/06/16-11:19:08.751 5dbc Compacted 1@0 + 1@1 files => 306949 bytes
-2016/06/16-11:19:08.752 5dbc Delete type=2 #482
-2016/06/16-11:19:08.752 5dbc Delete type=2 #489
-2016/06/16-11:19:08.753 5dbc compacted to: files[ 0 2 43 0 0 0 0 ]
-2016/06/16-11:19:15.869 5dbc Compacting 1@1 + 4@2 files
-2016/06/16-11:19:15.985 5dbc Generated table #493: 736 keys, 3031588 bytes
-2016/06/16-11:19:16.237 5dbc Generated table #494: 71 keys, 2250349 bytes
-2016/06/16-11:19:16.670 5dbc Generated table #495: 14 keys, 2104917 bytes
-2016/06/16-11:19:17.061 5dbc Generated table #496: 2065 keys, 723926 bytes
-2016/06/16-11:19:17.061 5dbc Compacted 1@1 + 4@2 files => 8110780 bytes
-2016/06/16-11:19:17.062 5dbc Delete type=2 #484
-2016/06/16-11:19:17.063 5dbc Delete type=2 #485
-2016/06/16-11:19:17.064 5dbc Delete type=2 #486
-2016/06/16-11:19:17.065 5dbc Delete type=2 #487
-2016/06/16-11:19:17.066 5dbc Delete type=2 #492
-2016/06/16-11:19:17.067 5dbc compacted to: files[ 0 1 43 0 0 0 0 ]
-2016/06/16-14:54:45.169 5dbc Level-0 table #498: started
-2016/06/16-14:54:45.374 5dbc Level-0 table #498: 4063675 bytes OK
-2016/06/16-14:54:45.374 5dbc Delete type=0 #490
-2016/06/16-15:30:43.585 5dbc Compacting 1@0 + 1@1 files
-2016/06/16-15:30:43.615 5dbc Generated table #499: 432 keys, 78123 bytes
-2016/06/16-15:30:43.625 5dbc Generated table #500: 588 keys, 293396 bytes
-2016/06/16-15:30:43.625 5dbc Compacted 1@0 + 1@1 files => 371519 bytes
-2016/06/16-15:30:43.625 5dbc Delete type=2 #491
-2016/06/16-15:30:43.625 5dbc Delete type=2 #498
-2016/06/16-15:30:43.630 5dbc compacted to: files[ 0 2 43 0 0 0 0 ]
-2016/06/16-15:31:57.907 5dbc Compacting 1@1 + 4@2 files
-2016/06/16-15:31:57.977 5dbc Generated table #501: 734 keys, 3028573 bytes
-2016/06/16-15:31:58.032 5dbc Generated table #502: 71 keys, 2250349 bytes
-2016/06/16-15:31:58.202 5dbc Generated table #503: 14 keys, 2104917 bytes
-2016/06/16-15:31:58.302 5dbc Generated table #504: 2064 keys, 725872 bytes
-2016/06/16-15:31:58.302 5dbc Compacted 1@1 + 4@2 files => 8109711 bytes
-2016/06/16-15:31:58.302 5dbc Delete type=2 #493
-2016/06/16-15:31:58.307 5dbc Delete type=2 #494
-2016/06/16-15:31:58.307 5dbc Delete type=2 #495
-2016/06/16-15:31:58.307 5dbc Delete type=2 #496
-2016/06/16-15:31:58.307 5dbc Delete type=2 #500
-2016/06/16-15:31:58.307 5dbc compacted to: files[ 0 1 43 0 0 0 0 ]
-2016/06/16-15:40:37.508 5dbc Level-0 table #506: started
-2016/06/16-15:40:37.668 5dbc Level-0 table #506: 4118607 bytes OK
-2016/06/16-15:40:37.673 5dbc Delete type=0 #497
-2016/06/16-15:44:04.007 5dbc Compacting 1@1 + 4@2 files
-2016/06/16-15:44:04.402 5dbc Generated table #507: 734 keys, 3028573 bytes
-2016/06/16-15:44:04.607 5dbc Generated table #508: 71 keys, 2250349 bytes
-2016/06/16-15:44:04.747 5dbc Generated table #509: 14 keys, 2104917 bytes
-2016/06/16-15:44:04.797 5dbc Generated table #510: 2064 keys, 727509 bytes
-2016/06/16-15:44:04.797 5dbc Compacted 1@1 + 4@2 files => 8111348 bytes
-2016/06/16-15:44:04.802 5dbc Delete type=2 #501
-2016/06/16-15:44:04.802 5dbc Delete type=2 #502
-2016/06/16-15:44:04.802 5dbc Delete type=2 #503
-2016/06/16-15:44:04.802 5dbc Delete type=2 #504
-2016/06/16-15:44:04.802 5dbc Delete type=2 #506
-2016/06/16-15:44:04.807 5dbc compacted to: files[ 0 1 43 0 0 0 0 ]
-2016/06/16-16:38:36.947 5dbc Level-0 table #512: started
-2016/06/16-16:38:37.129 5dbc Level-0 table #512: 4025222 bytes OK
-2016/06/16-16:38:37.129 5dbc Delete type=0 #505
+2016/06/25-14:39:29.428 2420 Recovering log #522
+2016/06/25-14:39:29.437 2420 Level-0 table #531: started
+2016/06/25-14:39:29.492 2420 Level-0 table #531: 1404932 bytes OK
+2016/06/25-14:39:29.522 2420 Delete type=0 #522
+2016/06/25-14:39:29.523 2420 Delete type=3 #513
+2016/06/25-14:40:30.169 5104 Compacting 1@0 + 1@1 files
+2016/06/25-14:40:30.214 5104 Generated table #533: 435 keys, 79051 bytes
+2016/06/25-14:40:30.220 5104 Generated table #534: 609 keys, 258949 bytes
+2016/06/25-14:40:30.220 5104 Compacted 1@0 + 1@1 files => 338000 bytes
+2016/06/25-14:40:30.221 5104 Delete type=2 #524
+2016/06/25-14:40:30.222 5104 Delete type=2 #531
+2016/06/25-14:40:30.222 5104 compacted to: files[ 0 2 43 0 0 0 0 ]
+2016/06/25-14:40:45.689 5104 Compacting 1@1 + 4@2 files
+2016/06/25-14:40:45.860 5104 Generated table #535: 736 keys, 3000136 bytes
+2016/06/25-14:40:45.929 5104 Generated table #536: 71 keys, 2250008 bytes
+2016/06/25-14:40:46.082 5104 Generated table #537: 14 keys, 2104917 bytes
+2016/06/25-14:40:46.216 5104 Generated table #538: 2292 keys, 1957280 bytes
+2016/06/25-14:40:46.216 5104 Compacted 1@1 + 4@2 files => 9312341 bytes
+2016/06/25-14:40:46.217 5104 Delete type=2 #526
+2016/06/25-14:40:46.218 5104 Delete type=2 #527
+2016/06/25-14:40:46.218 5104 Delete type=2 #528
+2016/06/25-14:40:46.219 5104 Delete type=2 #529
+2016/06/25-14:40:46.220 5104 Delete type=2 #534
+2016/06/25-14:40:46.220 5104 compacted to: files[ 0 1 43 0 0 0 0 ]

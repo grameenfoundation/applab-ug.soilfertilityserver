@@ -1,47 +1,24 @@
-2016/06/24-18:53:37.830 3940 Recovering log #511
-2016/06/24-18:53:37.961 3940 Level-0 table #514: started
-2016/06/24-18:53:37.961 3940 Level-0 table #514: 22560 bytes OK
-2016/06/24-18:53:37.971 3940 Delete type=0 #511
-2016/06/24-18:53:37.971 3940 Delete type=3 #488
-2016/06/24-18:54:22.504 1fc8 Compacting 2@0 + 1@1 files
-2016/06/24-18:54:22.549 1fc8 Generated table #516: 434 keys, 78839 bytes
-2016/06/24-18:54:22.564 1fc8 Generated table #517: 1069 keys, 432604 bytes
-2016/06/24-18:54:22.564 1fc8 Compacted 2@0 + 1@1 files => 511443 bytes
-2016/06/24-18:54:22.569 1fc8 Delete type=2 #499
-2016/06/24-18:54:22.569 1fc8 Delete type=2 #512
-2016/06/24-18:54:22.569 1fc8 Delete type=2 #514
-2016/06/24-18:54:22.569 1fc8 compacted to: files[ 0 2 43 0 0 0 0 ]
-2016/06/24-18:56:51.820 1fc8 Compacting 1@1 + 4@2 files
-2016/06/24-18:56:51.853 1fc8 Generated table #518: 736 keys, 3013264 bytes
-2016/06/24-18:56:52.217 1fc8 Generated table #519: 71 keys, 2250349 bytes
-2016/06/24-18:56:53.707 1fc8 Generated table #520: 14 keys, 2104917 bytes
-2016/06/24-18:56:53.798 1fc8 Generated table #521: 2283 keys, 807136 bytes
-2016/06/24-18:56:53.798 1fc8 Compacted 1@1 + 4@2 files => 8175666 bytes
-2016/06/24-18:56:53.799 1fc8 Delete type=2 #507
-2016/06/24-18:56:53.801 1fc8 Delete type=2 #508
-2016/06/24-18:56:53.802 1fc8 Delete type=2 #509
-2016/06/24-18:56:53.803 1fc8 Delete type=2 #510
-2016/06/24-18:56:53.803 1fc8 Delete type=2 #517
-2016/06/24-18:56:53.804 1fc8 compacted to: files[ 0 1 43 0 0 0 0 ]
-2016/06/24-21:40:35.121 1fc8 Level-0 table #523: started
-2016/06/24-21:40:35.300 1fc8 Level-0 table #523: 4162017 bytes OK
-2016/06/24-21:40:35.348 1fc8 Delete type=0 #515
-2016/06/24-21:40:50.679 1fc8 Compacting 1@0 + 1@1 files
-2016/06/24-21:40:50.682 1fc8 Generated table #524: 435 keys, 79051 bytes
-2016/06/24-21:40:50.731 1fc8 Generated table #525: 1253 keys, 1492773 bytes
-2016/06/24-21:40:50.731 1fc8 Compacted 1@0 + 1@1 files => 1571824 bytes
-2016/06/24-21:40:50.732 1fc8 Delete type=2 #516
-2016/06/24-21:40:50.732 1fc8 Delete type=2 #523
-2016/06/24-21:40:50.734 1fc8 compacted to: files[ 0 2 43 0 0 0 0 ]
-2016/06/24-21:41:18.980 1fc8 Compacting 1@1 + 4@2 files
-2016/06/24-21:41:19.259 1fc8 Generated table #526: 732 keys, 2993351 bytes
-2016/06/24-21:41:19.371 1fc8 Generated table #527: 71 keys, 2250008 bytes
-2016/06/24-21:41:19.575 1fc8 Generated table #528: 14 keys, 2104917 bytes
-2016/06/24-21:41:19.746 1fc8 Generated table #529: 2296 keys, 1952560 bytes
-2016/06/24-21:41:19.746 1fc8 Compacted 1@1 + 4@2 files => 9300836 bytes
-2016/06/24-21:41:19.747 1fc8 Delete type=2 #518
-2016/06/24-21:41:19.748 1fc8 Delete type=2 #519
-2016/06/24-21:41:19.749 1fc8 Delete type=2 #520
-2016/06/24-21:41:19.750 1fc8 Delete type=2 #521
-2016/06/24-21:41:19.750 1fc8 Delete type=2 #525
-2016/06/24-21:41:19.751 1fc8 compacted to: files[ 0 1 43 0 0 0 0 ]
+2016/06/25-22:52:19.816 4380 Recovering log #532
+2016/06/25-22:52:19.818 4380 Level-0 table #540: started
+2016/06/25-22:52:19.823 4380 Level-0 table #540: 163103 bytes OK
+2016/06/25-22:52:19.830 4380 Delete type=0 #532
+2016/06/25-22:52:19.830 4380 Delete type=3 #530
+2016/06/25-22:52:33.265 4c10 Compacting 1@0 + 1@1 files
+2016/06/25-22:52:33.269 4c10 Generated table #542: 437 keys, 79051 bytes
+2016/06/25-22:52:33.273 4c10 Generated table #543: 1064 keys, 134194 bytes
+2016/06/25-22:52:33.273 4c10 Compacted 1@0 + 1@1 files => 213245 bytes
+2016/06/25-22:52:33.274 4c10 Delete type=2 #533
+2016/06/25-22:52:33.275 4c10 Delete type=2 #540
+2016/06/25-22:52:33.275 4c10 compacted to: files[ 0 2 43 0 0 0 0 ]
+2016/06/25-22:52:39.916 4c10 Compacting 1@1 + 4@2 files
+2016/06/25-22:52:40.092 4c10 Generated table #544: 736 keys, 2994345 bytes
+2016/06/25-22:52:40.128 4c10 Generated table #545: 71 keys, 2250008 bytes
+2016/06/25-22:52:40.413 4c10 Generated table #546: 14 keys, 2104917 bytes
+2016/06/25-22:52:40.523 4c10 Generated table #547: 2067 keys, 730272 bytes
+2016/06/25-22:52:40.523 4c10 Compacted 1@1 + 4@2 files => 8079542 bytes
+2016/06/25-22:52:40.524 4c10 Delete type=2 #535
+2016/06/25-22:52:40.525 4c10 Delete type=2 #536
+2016/06/25-22:52:40.525 4c10 Delete type=2 #537
+2016/06/25-22:52:40.526 4c10 Delete type=2 #538
+2016/06/25-22:52:40.527 4c10 Delete type=2 #543
+2016/06/25-22:52:40.527 4c10 compacted to: files[ 0 1 43 0 0 0 0 ]

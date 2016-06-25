@@ -1,14 +1,5 @@
 ﻿<RecentlyViewedMethods>
   <RecentlyViewedMethods>
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.RegionCrop.Id" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Calc.Region" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Calc.Units" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3AOptimize.Calc.get_CalcCrops" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/F%3AGrameen.Controllers.ReportController.database" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.ReportController.ActivityReport" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-%5Bcshtml%5D%20Views%5CAccount/M%3AASP._Page_Views_Account_Login_cshtml.Execute" />
-    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/P%3AOptimize.Calc.Database" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/F%3AGrameen.Controllers.OptimizeController.database" />
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-%5Bcshtml%5D%20Views%5CHome/M%3AASP._Page_Views_Home_Index_cshtml.Execute" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.ReportController.ErrorReport" />
   </RecentlyViewedMethods>
 </RecentlyViewedMethods>
