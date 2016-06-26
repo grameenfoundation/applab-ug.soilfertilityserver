@@ -1,5 +1,11 @@
 ﻿<RecentlyViewedMethods>
   <RecentlyViewedMethods>
-    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.ReportController.ErrorReport" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3ALogic.ApplicationDbContext.%23ctor" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.ReportController.Index" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3ALogic.Optimizer.Optimize%28Optimize.Calc%29" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/F%3AGrameen.Controllers.ReportController.database" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3ALogic.OptimizerLog.ErrorLog%28Optimize.Calc%2CSystem.String%29" />
+    <RecentMethod id="ab6423a6-93c1-4d73-bd7e-3662d6e54aa4%28Logic%29-2692032B/M%3ALogic.OptimizerLog.ActivityLog%28Optimize.Calc%29" />
+    <RecentMethod id="fd07f142-9ef1-4152-9093-546d0be58c59%28Grameen%29-C66A9EA4-WebAppMainModule/M%3AGrameen.Controllers.OptimizeController.Get%28Optimize.Calc%29" />
   </RecentlyViewedMethods>
 </RecentlyViewedMethods>

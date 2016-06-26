@@ -1,23 +1,15 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:EditRegion.cshtml" caret="0" fromTop="0" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:DeleteRegion.cshtml" caret="1464" fromTop="0" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:AddRegion.cshtml" caret="363" fromTop="12" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Shared/f:_Layout.cshtml" caret="1267" fromTop="14" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/d:DataTables/f:buttons.bootstrap.js" caret="661" fromTop="26" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/d:DataTables/f:buttons.flash.js" caret="0" fromTop="0" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/d:DataTables/f:buttons.html5.js" caret="17687" fromTop="48" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/d:DataTables/f:buttons.html5.min.js" caret="7930" fromTop="14" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.bootstrap.min.css" caret="1630" fromTop="0" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.bootstrap4.css" caret="3237" fromTop="11" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.bootstrap.css" caret="2045" fromTop="13" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.dataTables.css" caret="5956" fromTop="14" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:OptimizeController.cs" caret="2337" fromTop="45" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Account/f:Login.cshtml" caret="1069" fromTop="24" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
     <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerManager.cs" caret="0" fromTop="0" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/f:Web.config" caret="1375" fromTop="20" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Models/f:ReportViews.cs" caret="164" fromTop="9" />
     <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/d:Entities/f:CalcCrop.cs" caret="196" fromTop="10" />
     <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/d:Entities/f:CalcCropFertilizerRatio.cs" caret="576" fromTop="22" />
     <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/d:Entities/f:RegionCrop.cs" caret="278" fromTop="12" />
@@ -27,21 +19,18 @@
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:Index.cshtml" caret="1105" fromTop="0" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.jqueryui.css" caret="531" fromTop="13" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/f:custom.js" caret="576" fromTop="15" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="471" fromTop="0" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Models/f:ReportViews.cs" caret="164" fromTop="9" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Models/f:AccountViewModels.cs" caret="0" fromTop="0" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Models/f:RegionCropView.cs" caret="0" fromTop="0" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="321" fromTop="13" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:AccountController.cs" caret="572" fromTop="15" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:IdentityModels.cs" caret="566" fromTop="15" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="1451" fromTop="19" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:Optimizer.cs" caret="1110" fromTop="12" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerOutput.cs" caret="2419" fromTop="12" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:OptimizeController.cs" caret="2139" fromTop="19" />
   </RecentFiles>
   <RecentEdits>
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:Index.cshtml" caret="2052" fromTop="16" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:Index.cshtml" caret="2062" fromTop="22" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:Index.cshtml" caret="2052" fromTop="18" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:Index.cshtml" caret="49" fromTop="0" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:Index.cshtml" caret="2005" fromTop="19" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Shared/f:_Layout.cshtml" caret="1974" fromTop="14" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Shared/f:_Layout.cshtml" caret="1974" fromTop="24" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Shared/f:_Layout.cshtml" caret="1267" fromTop="14" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Views/d:Home/f:Index.cshtml" caret="1820" fromTop="8" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/d:DataTables/f:buttons.html5.js" caret="16939" fromTop="16" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/f:custom.js" caret="413" fromTop="18" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Scripts/f:custom.js" caret="193" fromTop="9" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.bootstrap.css" caret="2045" fromTop="13" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.dataTables.css" caret="5956" fromTop="14" />
     <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Content/d:DataTables/d:css/f:buttons.jqueryui.css" caret="531" fromTop="13" />
@@ -54,11 +43,23 @@
     <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/d:Entities/f:CalcCrop.cs" caret="196" fromTop="10" />
     <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/d:Entities/f:CalcFertilizer.cs" caret="386" fromTop="17" />
     <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/d:Entities/f:CalcCropFertilizerRatio.cs" caret="449" fromTop="16" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="1362" fromTop="24" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="656" fromTop="7" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="850" fromTop="19" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="1360" fromTop="20" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="528" fromTop="8" />
-    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="1265" fromTop="15" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="1407" fromTop="24" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="670" fromTop="7" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="864" fromTop="19" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="542" fromTop="8" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="1279" fromTop="15" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="1405" fromTop="21" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:OptimizeController.cs" caret="536" fromTop="10" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:Optimizer.cs" caret="284" fromTop="14" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:IdentityModels.cs" caret="158" fromTop="5" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:ReportController.cs" caret="307" fromTop="13" />
+    <File id="FD07F142-9EF1-4152-9093-546D0BE58C59/d:Controllers/f:AccountController.cs" caret="11848" fromTop="15" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="758" fromTop="17" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="998" fromTop="5" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="1279" fromTop="11" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="694" fromTop="11" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="842" fromTop="15" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="904" fromTop="15" />
+    <File id="AB6423A6-93C1-4D73-BD7E-3662D6E54AA4/f:OptimizerLog.cs" caret="245" fromTop="12" />
   </RecentEdits>
 </RecentFiles>

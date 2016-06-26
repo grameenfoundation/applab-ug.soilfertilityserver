@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using Grameen.Models;
+using Logic;
 using Optimize;
 
 namespace Grameen.Controllers
