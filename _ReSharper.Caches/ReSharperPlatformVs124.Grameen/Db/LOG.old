@@ -1,24 +1,18 @@
-2016/06/25-22:52:19.816 4380 Recovering log #532
-2016/06/25-22:52:19.818 4380 Level-0 table #540: started
-2016/06/25-22:52:19.823 4380 Level-0 table #540: 163103 bytes OK
-2016/06/25-22:52:19.830 4380 Delete type=0 #532
-2016/06/25-22:52:19.830 4380 Delete type=3 #530
-2016/06/25-22:52:33.265 4c10 Compacting 1@0 + 1@1 files
-2016/06/25-22:52:33.269 4c10 Generated table #542: 437 keys, 79051 bytes
-2016/06/25-22:52:33.273 4c10 Generated table #543: 1064 keys, 134194 bytes
-2016/06/25-22:52:33.273 4c10 Compacted 1@0 + 1@1 files => 213245 bytes
-2016/06/25-22:52:33.274 4c10 Delete type=2 #533
-2016/06/25-22:52:33.275 4c10 Delete type=2 #540
-2016/06/25-22:52:33.275 4c10 compacted to: files[ 0 2 43 0 0 0 0 ]
-2016/06/25-22:52:39.916 4c10 Compacting 1@1 + 4@2 files
-2016/06/25-22:52:40.092 4c10 Generated table #544: 736 keys, 2994345 bytes
-2016/06/25-22:52:40.128 4c10 Generated table #545: 71 keys, 2250008 bytes
-2016/06/25-22:52:40.413 4c10 Generated table #546: 14 keys, 2104917 bytes
-2016/06/25-22:52:40.523 4c10 Generated table #547: 2067 keys, 730272 bytes
-2016/06/25-22:52:40.523 4c10 Compacted 1@1 + 4@2 files => 8079542 bytes
-2016/06/25-22:52:40.524 4c10 Delete type=2 #535
-2016/06/25-22:52:40.525 4c10 Delete type=2 #536
-2016/06/25-22:52:40.525 4c10 Delete type=2 #537
-2016/06/25-22:52:40.526 4c10 Delete type=2 #538
-2016/06/25-22:52:40.527 4c10 Delete type=2 #543
-2016/06/25-22:52:40.527 4c10 compacted to: files[ 0 1 43 0 0 0 0 ]
+2016/06/29-19:09:46.480 17f4 Recovering log #579
+2016/06/29-19:09:46.480 17f4 Level-0 table #587: started
+2016/06/29-19:09:46.536 17f4 Level-0 table #587: 32446 bytes OK
+2016/06/29-19:09:46.541 17f4 Delete type=0 #579
+2016/06/29-19:09:46.542 17f4 Delete type=3 #577
+2016/06/29-19:10:49.550 29b0 Moved #587 to level-1 32446 bytes OK: files[ 0 2 43 0 0 0 0 ]
+2016/06/29-19:10:52.612 29b0 Compacting 1@1 + 4@2 files
+2016/06/29-19:10:53.238 29b0 Generated table #589: 736 keys, 2982872 bytes
+2016/06/29-19:10:53.398 29b0 Generated table #590: 71 keys, 2250008 bytes
+2016/06/29-19:10:53.575 29b0 Generated table #591: 14 keys, 2104917 bytes
+2016/06/29-19:10:53.847 29b0 Generated table #592: 2067 keys, 729673 bytes
+2016/06/29-19:10:53.847 29b0 Compacted 1@1 + 4@2 files => 8067470 bytes
+2016/06/29-19:10:53.848 29b0 Delete type=2 #582
+2016/06/29-19:10:53.849 29b0 Delete type=2 #583
+2016/06/29-19:10:53.850 29b0 Delete type=2 #584
+2016/06/29-19:10:53.850 29b0 Delete type=2 #585
+2016/06/29-19:10:53.851 29b0 Delete type=2 #587
+2016/06/29-19:10:53.851 29b0 compacted to: files[ 0 1 43 0 0 0 0 ]

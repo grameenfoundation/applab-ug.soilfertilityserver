@@ -11,7 +11,7 @@
             </li>
             <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
 
-            @if (User.Identity.GetUserName() == "Administrator")
+            @if (User.Identity.GetUserName() == "Administrator" || User.Identity.GetUserName() == "josh")
             {
             <li>@Html.ActionLink("Add New User", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
             }

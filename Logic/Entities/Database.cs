@@ -13,9 +13,16 @@ namespace Optimize
 
         public List<Crop> Crops { get; set; }
 
-        public List<RegionCrop> RegionCrops { get; set; }
-
+        public List<RegionCropAndroid> RegionCrops { get; set; }
 
     }
 
+    public class RegionCropAndroid
+    {
+        public int Id { get; set; }
+
+        public int RegionId { get; set; }
+
+        public Crop Crop { get; set; }
+    }
 }

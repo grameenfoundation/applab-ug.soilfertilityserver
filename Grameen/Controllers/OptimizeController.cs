@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
 using System.Web.Script.Serialization;
 using Grameen.Models;
@@ -28,8 +30,13 @@ namespace Grameen.Controllers
             {
                 json.Database.Regions = database.Regions.ToList();
                 json.Database.Crops = database.Crops.ToList();
-                json.Database.RegionCrops = database.RegionCrops.ToList();
-                json.Database.VersionDateTime = database.Versions.ToList().Last().DateTime;
+                var regionCrops = database.RegionCrops.ToList().Select(regionCrop => new RegionCropAndroid()
+                {
+                    Id = regionCrop.Id, RegionId = regionCrop.RegionId, Crop = database.Crops.FirstOrDefault(a => a.Name == regionCrop.Crop)
+                }).ToList();
+
+                json.Database.RegionCrops = regionCrops;
+                json.Database.VersionDateTime = new DateTime(); //database.Versions.ToList().Last().DateTime.Date;
             }
             var result = new Optimizer().Optimize(json);
             return result;
@@ -45,8 +52,16 @@ namespace Grameen.Controllers
             {
                 json.Database.Regions = database.Regions.ToList();
                 json.Database.Crops = database.Crops.ToList();
-                json.Database.RegionCrops = database.RegionCrops.ToList();
-                json.Database.VersionDateTime = database.Versions.ToList().Last().DateTime;
+
+                var regionCrops = database.RegionCrops.ToList().Select(regionCrop => new RegionCropAndroid()
+                {
+                    Id = regionCrop.Id,
+                    RegionId = regionCrop.RegionId,
+                    Crop = database.Crops.FirstOrDefault(a => a.Name == regionCrop.Crop)
+                }).ToList();
+
+                json.Database.RegionCrops = regionCrops;
+                json.Database.VersionDateTime = new DateTime();//database.Versions.ToList().Last().DateTime.Date;
             }
 
             return new Optimizer().Optimize(json);

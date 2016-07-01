@@ -43,3 +43,4 @@ C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\bin\Debug\M
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\bin\Debug\Newtonsoft.Json.xml
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\obj\Debug\Logic.dll
 C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\obj\Debug\Logic.pdb
+C:\Users\hp\Google Drive\Grameen\applab-ug.soilfertilityserver\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
