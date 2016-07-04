@@ -36,7 +36,7 @@ namespace Grameen.Controllers
                 }).ToList();
 
                 json.Database.RegionCrops = regionCrops;
-                json.Database.VersionDateTime = new DateTime(); //database.Versions.ToList().Last().DateTime.Date;
+                json.Database.VersionDateTime = database.Versions.ToList().Last().DateTime.Date;
             }
             var result = new Optimizer().Optimize(json);
             return result;
@@ -61,7 +61,7 @@ namespace Grameen.Controllers
                 }).ToList();
 
                 json.Database.RegionCrops = regionCrops;
-                json.Database.VersionDateTime = new DateTime();//database.Versions.ToList().Last().DateTime.Date;
+                json.Database.VersionDateTime = database.Versions.ToList().Last().DateTime.Date;
             }
 
             return new Optimizer().Optimize(json);
